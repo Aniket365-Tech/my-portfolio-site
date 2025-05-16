@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.js">
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="./Assets/Aniket..png" alt="logo" class="logo">
+                <img src="./Assets/Aniket-logo.png" alt="logo" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -35,12 +36,62 @@
                 </div>
                 <div class="about-col-2">
                    <h1 class="sub-title">About Me</h1> 
-                   <p>Hi I'm Aniket Gajbhiye, a front-end web developer who loves creating clean and simple websites. I enjoy turnig designs into real websites usng HTML, CSS, and Javascript.
+                   <p>Hi I'm Aniket Gajbhiye, a front-end web developer who loves creating clean and simple websites. I enjoy turnig designs into real websites using HTML, CSS, and Javascript.
 
                    I recently started my journey in web development and have built some small projects like a portfolio site, to-do list, and unit converter. I,m aslo learning JavaScript in depth to build more powerful and dynamic web apps.
                    
                    Right now , I'm looking for opportuities where I can learn form experienced developers, work on real projects, and grow my knowlege in front-end development. 
                    </p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(skills)">Skills</p>
+                    <p class="tab-links" onclick="opentab(experience)"> Experience </p> 
+                    <p class="tab-links" onclick="opentab(education)">Education</p>
+                    <p class="tab-links" onclick="opentab(internships)">Internships</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX Tools</span>
+                            <ul>
+                                <li>Canva</li>    
+                            </ul>
+                        </li> <br>
+                        <li><span>Web Development</span>
+                            <ul>
+                                <li>HTML/CSS</li>
+                            </ul> 
+                            <ul>
+                                <li>JavaScript</li>
+                            </ul> 
+                            <ul>
+                                <li>Node.js</li>
+                            </ul> 
+                             
+
+                    </ul>
+                   </div>
+                   <div class="tab-contents " id="education" >
+                    <ul>
+                        <li><span>2021-2023</span><br> Diploma in Computer Technology at Government Polytechinc,Brahmapuri. 
+                        </li><br>
+                        <li><span>2023-2026 (Running)</span><br>BTech in computer science engineering at G H Raisoni College of Engineering and Management, Nagpur 
+                        </li>
+
+                    </ul>
+                   </div>
+                   
+                   
+                   <div class="tab-contents" id="internships">
+                    <ul>
+                        <li><span>05-Jul-2022 - 16 Aug 2022</span><br> Python intern at iBase Electrosoft LLP.
+                        </li><br>
+                        <li><span>15-May-2025 - 15 Jun 2025 (Running)</span><br>Web Development Internship at Code Alpha
+                        </li>
+
+                    </ul>
+                   </div>
+                   
+                    
                 </div>
             </div>
         </div>
