@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="profile.js">
+    <script src="./profile.js"></script>
+    <script src="https://kit.fontawesome.com/159539b85a.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="header">
@@ -44,10 +46,10 @@
                    </p>
 
                    <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab(skills)">Skills</p>
-                    <p class="tab-links" onclick="opentab(experience)"> Experience </p> 
-                    <p class="tab-links" onclick="opentab(education)">Education</p>
-                    <p class="tab-links" onclick="opentab(internships)">Internships</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience </p> 
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('internships')">Internships</p>
                    </div>
                    <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -70,6 +72,9 @@
 
                     </ul>
                    </div>
+                   <div class="tab-contents" id="experience">
+                    
+                   </div>
                    <div class="tab-contents " id="education" >
                     <ul>
                         <li><span>2021-2023</span><br> Diploma in Computer Technology at Government Polytechinc,Brahmapuri. 
@@ -85,7 +90,7 @@
                     <ul>
                         <li><span>05-Jul-2022 - 16 Aug 2022</span><br> Python intern at iBase Electrosoft LLP.
                         </li><br>
-                        <li><span>15-May-2025 - 15 Jun 2025 (Running)</span><br>Web Development Internship at Code Alpha
+                        <li><span>15-May-2025 - 15 Jun 2025 (Ongoing)</span><br>Web Development Internship at Code Alpha
                         </li>
 
                     </ul>
@@ -96,6 +101,69 @@
             </div>
         </div>
     </div>
+
+    <!-- ----------------------services------------------------------ -->
     
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- -----------------portfolio----------------------
+      -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Assets/work1.png" alt="">
+                    <div class="layer">
+                        <h2>Unit-Coverter</h2>
+                        <p>Portfolio Website: Designed and built a personal portfolio to showcase projects, skills, and contact details. Created using HTML, CSS, and JavaScript with a focus on clean design and 
+                        </p>
+
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="./Assets/work-2.png" alt="">
+                    <div class="layer">
+                        <h2>My Portfolio</h2>
+                        <p>Portfolio Website: Designed and built a personal portfolio to showcase projects, skills, and contact details. Created using HTML, CSS, and JavaScript with a focus on clean design and responsiveness.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+
+                </div>
+                <div class="work">
+                    <img src="./Assets/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Forntend Mentor profile</h2>
+                        <p>Frontend Mentor Challenges: Completed various frontend challenges from Frontend Mentor, including layouts like the Four Card Feature Section. These projects helped enhance skills in responsive design, CSS Grid, and Flexbox while following professional UI/UX standards.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div>
+        <a href="#" class="btn">See more</a>
+    </div>
 </body>
 </html>
