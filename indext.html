@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./profile.js"></script>
+   
     <script src="https://kit.fontawesome.com/159539b85a.js" crossorigin="anonymous"></script>
     
 </head>
@@ -14,13 +14,17 @@
         <div class="container">
             <nav>
                 <img src="./Assets/Aniket-logo.png" alt="logo" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                
             </nav>
             <div class="header-text">
                 <p>Front-End Developer</p>
@@ -182,13 +186,14 @@
                     <a href="./Assets/Aniket resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="YourMessage" ></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="button" class="btn btn2">Submit</button>
 
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -196,5 +201,7 @@
             <p>Copyright © Aniket Gajbhiye. <i class="fa-solid fa-heart"></i></p>
         </div>
      </div>
+     
+      <script src="./profile.js"></script>
 </body>
 </html>
