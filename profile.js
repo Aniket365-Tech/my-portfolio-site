@@ -39,3 +39,12 @@ const msg = document.getElementById("msg")
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+document.addEventListener("DOMContentLoaded", function () {
+  var typed = new Typed(".auto-typed", {
+    strings: ["Aniket"],
+    typeSpeed: 100,
+    backSpeed:100,
+    loop: true
+  });
+});
