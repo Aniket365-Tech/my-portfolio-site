@@ -17,7 +17,6 @@ body{
     height: 100vh;
     background-image: url(./Assets/bg-image.jpg);
     background-attachment: fixed;
-    
     background-size: cover;
     background-position: center;
 }
@@ -370,6 +369,7 @@ nav .fa-solid{
 @media only screen and (max-width:600px){
     #header{
     background-image: url(./Assets/mo-bg.png);
+    
 }
     .header-text{
         margin-top: 100%;
